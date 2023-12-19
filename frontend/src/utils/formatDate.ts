@@ -1,0 +1,10 @@
+export function formatDate(dateString: string): string {
+    return new Date(dateString).toLocaleString("pt-BR",
+    {
+        year: "numeric",
+        month:  "numeric",
+        day:  "numeric",
+        hour:  "numeric",
+        minute:  "numeric",
+    });
+}
